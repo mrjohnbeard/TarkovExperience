@@ -8,6 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <nav><a href="/">HOME or WHATEVER YOU WANT</a></nav>
-</body>
-</html>
+    <nav>
+        <a href="/">HOME</a>
+        <% if (user) { %>
+        <!-- what the user will see if logged in -->
+        <a href="/logout">LOG OUT</a>
+        <% } else { %>
+            <a href="/auth/google" class="login">LOG IN&nbsp;</a>
+        <% } %>   
+    </nav>

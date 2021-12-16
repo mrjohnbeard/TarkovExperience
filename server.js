@@ -13,6 +13,7 @@ var usersRouter = require('./routes/users');
 
 require('dotenv').config();
 require('./config/database');
+require('./config/passport');
 
 var app = express();
 
