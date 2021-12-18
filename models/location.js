@@ -16,7 +16,7 @@ const locationSchema = new Schema(
         
         difficulty: {
             type: String,
-            enum: ['Easy', 'Hard', 'Expert', 'Insane'],
+            enum: ['Hard', 'Expert', 'Insane'],
         },
 
         enemies: {
