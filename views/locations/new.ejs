@@ -1,55 +1,55 @@
 <%- include('../partials/header') %>
 
-<form id="new-form" action="/locations" method="POST">
+    <form id="new-form" action="/locations" method="POST">
 
-    <label>Area:</label>
+        <label>Area:</label>
 
-    <select name="area">
-        <option value="Customs">Customs</option>
-        <option value="Factory">Factory</option>
-        <option value="Interchange">Interchange</option>
-        <option value="LightHouse">LightHouse</option>
-        <option value="Reserve">Reserve</option>
-        <option value="Shoreline">Shoreline</option>
-        <option value="TheLab">TheLab</option>
-        <option value="Woods">Woods</option>
-    </select>
-    
-    <label>Duration:</label>
-    <input type="text" name="duration">
+        <select name="area">
+            <option value="Customs">Customs</option>
+            <option value="Factory">Factory</option>
+            <option value="Interchange">Interchange</option>
+            <option value="LightHouse">LightHouse</option>
+            <option value="Reserve">Reserve</option>
+            <option value="Shoreline">Shoreline</option>
+            <option value="TheLab">TheLab</option>
+            <option value="Woods">Woods</option>
+        </select>
 
-    <label>Difficulty:</label>
-    <select name="difficulty">
-        <option value="Hard">Hard</option>
-        <option value="Expert">Expert</option>
-        <option value="Insane">Insanse</option>
-    </select>
+        <label>Duration:</label>
+        <input type="text" name="duration">
 
-
-
-    <label>Players:</label>
-    <input type="text" name="players">
-    
-    <label>Boss:</label>
-
-    <select name="boss">
-        <option value="Cultists">Cultists</option>
-        <option value="Glukhar">Glukhar</option>
-        <option value="Killa">Killa</option>
-        <option value="Raiders">Raiders</option>
-        <option value="Rouges">Rouges</option>
-        <option value="Sanitar">Sanitar</option>
-        <option value="Scavs">Scavs</option>
-        <option value="Shturman">Shturman</option>
-        <option value="Tagila">Tagila</option>
-        <option value="Reshala">Reshala</option>
-    </select>
-    
-    
-    
-    <input type="submit" value="Add Location">
-</form>
+        <label>Difficulty:</label>
+        <select name="difficulty">
+            <option value="Hard">Hard</option>
+            <option value="Expert">Expert</option>
+            <option value="Insane">Insanse</option>
+        </select>
 
 
 
-<%- include('../partials/footer') %>
+        <label>Players:</label>
+        <input type="text" name="players">
+
+        <label>Boss:</label>
+
+        <select name="boss">
+            <option value="Cultists">Cultists</option>
+            <option value="Glukhar">Glukhar</option>
+            <option value="Killa">Killa</option>
+            <option value="Raiders">Raiders</option>
+            <option value="Rouges">Rouges</option>
+            <option value="Sanitar">Sanitar</option>
+            <option value="Scavs">Scavs</option>
+            <option value="Shturman">Shturman</option>
+            <option value="Tagila">Tagila</option>
+            <option value="Reshala">Reshala</option>
+        </select>
+
+
+
+        <input type="submit" value="Add Location">
+    </form>
+
+
+
+    <%- include('../partials/footer') %>

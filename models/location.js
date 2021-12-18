@@ -9,11 +9,11 @@ const locationSchema = new Schema(
             type: String,
             enum: ['Customs', 'Factory', 'Interchange', 'LightHouse', 'Reserve', 'Shoreline', 'TheLab', 'Woods'],
         },
-        
+
         duration: {
             type: Number,
         },
-        
+
         difficulty: {
             type: String,
             enum: ['Hard', 'Expert', 'Insane'],
@@ -21,9 +21,9 @@ const locationSchema = new Schema(
 
         boss: {
             type: String,
-            enum: [ 'Cultists', 'Glukhar', 'Killa', 'Raiders', 'Rouges', 'Sanitar', 'Scavs', 'Shturman', 'Tagila', 'Reshala'],
+            enum: ['Cultists', 'Glukhar', 'Killa', 'Raiders', 'Rouges', 'Sanitar', 'Scavs', 'Shturman', 'Tagila', 'Reshala'],
         },
-        
+
         players: {
             type: Number,
             min: 5,
