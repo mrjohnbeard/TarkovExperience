@@ -7,7 +7,7 @@ module.exports = {
 };
 
 function index(req, res) {
-    Flight.find({}, function (err, flights) {
+    Location.find({}, function (err, locations) {
       if (err) {
         console.log(err);
       }
@@ -32,7 +32,7 @@ function index(req, res) {
         console.log(err);
         return res.redirect('/locations/new');
       }
-      console.log(flight);
+      console.log(location);
       res.redirect('/locations');
     });
   }
