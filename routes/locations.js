@@ -4,10 +4,10 @@ const locationsCtrl = require('../controllers/locations');
 const isLoggedIn = require('../config/auth');
 
 // GET "/locations/new" - New Route
-// router.get('/new', isLoggedIn, locationsCtrl.new);
+router.get('/new', isLoggedIn, locationsCtrl.new);
 
 // POST "/locations" - Create Route
-// router.post("/", isLoggedIn, locationsCtrl.create);
+router.post("/", isLoggedIn, locationsCtrl.create);
 
 // GET "/locations" - Index Route
 router.get('/', locationsCtrl.index);
