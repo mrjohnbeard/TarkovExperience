@@ -1,20 +1,12 @@
-module.exports = {
-    new: newExperience,
-    create,
-};
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const Experience = require('./../models/experience');
+const experienceSchema = new Schema({
+  
+    location: {
+        type: Schema.Types.ObjectId,
+        ref: 'Location'
+    }
+});
 
-function newExperience(req, res) {
-    res.render('experiences/new', {
-        title: `Add Experience`,
-    })
-};
-
-function create(req, res) {
-    req.body.location = req.params.id;
-    Experience.create(req.body, function (err) {
-        res.redirect(`/experiences/${req.params.id}`);
-    });
-};
-
+module.exports = mongoose.model('Experience', experienceSchema);
