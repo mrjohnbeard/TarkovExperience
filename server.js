@@ -7,11 +7,11 @@ var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
 
-// const isLoggedIn = require("./config/auth");
+const isLoggedIn = require("./config/auth");
 
 const indexRouter = require('./routes/index');
 const locationsRouter = require('./routes/locations');
-// const experiencesRouter = require('./routes/experiences');
+const experiencesRouter = require('./routes/experiences');
 
 require('dotenv').config();
 require('./config/database');
@@ -44,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/locations', locationsRouter);
-// app.use('/', isLoggedIn, experiencesRouter);
+app.use('/', isLoggedIn, experiencesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
