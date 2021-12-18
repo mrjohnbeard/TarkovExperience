@@ -21,7 +21,7 @@ const locationSchema = new Schema(
 
         enemies: {
             type: String,
-            enum: [ 'Cultists', 'Glukhar', 'Killa',  'Raiders', 'Rouges', 'Sanitar', 'Scavs', 'Shturman', 'Tagila', 'Reshala'],
+            enum: [ 'Cultists', 'Glukhar', 'Killa', 'Raiders', 'Rouges', 'Sanitar', 'Scavs', 'Shturman', 'Tagila', 'Reshala'],
         },
         
         players: {
