@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav>
-        <a href="/">HOME</a>
-        <a href="/locations">All Locations</a>
-
+        <a href="/">Home</a>
+        
         <% if (user) { %>
-        <!-- what the user will see if logged in -->
+            <!-- what the user will see if logged in -->
+        <a href="/locations">All Locations</a>
         <a href="/locations/new">Add Location</a>
-        <a href="/logout">LOG OUT</a>
+        <a href="/logout">Log Out</a>
         <% } else { %>
             <a href="/auth/google" class="login">LOG IN&nbsp;</a>
         <% } %>   
