@@ -4,7 +4,10 @@
     <thead>
       <tr>
         <th>Area</th>
-        <th>Enemies</th>
+        <th>Duration</th>
+        <th>Difficulty</th>
+        <th>Boss</th>
+        <th>Players</th>
 
       </tr>
     </thead>
@@ -14,9 +17,22 @@
           <td>
             <%= l.area %>
           </td>
-          <td>
-            <%= l.enemies %>
-          </td>
+
+        <td>
+          <%= l.duration %>
+        </td>
+
+        <td>
+          <%= l.difficulty %>
+        </td>
+        <td>
+          <%= l.boss %>
+        </td>
+        <td>
+          <%= l.players %>
+        </td>
+
+
         </tr>
         <% }); %>
     </tbody>

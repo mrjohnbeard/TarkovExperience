@@ -19,7 +19,7 @@ const locationSchema = new Schema(
             enum: ['Hard', 'Expert', 'Insane'],
         },
 
-        enemies: {
+        boss: {
             type: String,
             enum: [ 'Cultists', 'Glukhar', 'Killa', 'Raiders', 'Rouges', 'Sanitar', 'Scavs', 'Shturman', 'Tagila', 'Reshala'],
         },
