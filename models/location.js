@@ -7,7 +7,7 @@ const locationSchema = new Schema(
 
         area: {
             type: String,
-            enum: ['Customs', 'Factory', 'Interchange', 'LightHouse', 'Reserve', 'Shoreline', 'The Lab', 'Woods'],
+            enum: ['Customs', 'Factory', 'Interchange', 'LightHouse', 'Reserve', 'Shoreline', 'TheLab', 'Woods'],
         },
         
         duration: {
