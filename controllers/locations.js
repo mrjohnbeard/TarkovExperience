@@ -24,10 +24,10 @@ function index(req, res) {
   function show(req, res) {
     Location.findById(req.params.id, function (err, location) {
       Experience.find({location: location._id}, function(err, experiences) {
-        res.render('location/show', { 
+        res.render('locations/show', { 
           title: "Location Detail", 
           location,
-          experience
+          experiences
          });
       });
     });
