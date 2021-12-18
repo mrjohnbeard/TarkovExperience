@@ -13,6 +13,6 @@ router.post("/", isLoggedIn, locationsCtrl.create);
 router.get('/', locationsCtrl.index);
 
 // GET "/locations/:id" - Show Route
-// router.get('/:id', locationsCtrl.show);
+router.get('/:id', locationsCtrl.show);
 
 module.exports = router;

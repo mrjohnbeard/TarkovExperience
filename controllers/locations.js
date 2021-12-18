@@ -1,7 +1,9 @@
 const Location = require("../models/location");
+const Experience = require('../models/experience');
 
 module.exports = {
     index,
+    show,
     new: newLocation,
     create,
 };
@@ -18,6 +20,20 @@ function index(req, res) {
   
     });
   }
+
+  function show(req, res) {
+    Location.findById(req.params.id, function (err, location) {
+      Experience.find({location: location._id}, function(err, experiences) {
+        res.render('location/show', { 
+          title: "Location Detail", 
+          location,
+          experience
+         });
+      });
+    });
+  };
+  
+
 
   function newLocation(req, res) {
     res.render("locations/new",
