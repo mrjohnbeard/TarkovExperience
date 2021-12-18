@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+  <section id="show-page">
+    <div>Area: </div>
+    <div>
+      <%= location.area %>
+    </div>
+
+    <br><br>
+
+        <% if (experiences.length) { %>
+          <table id="experienceBox">
+            <tr>
+              <th>Kill</th>
+              
+              <th></th>
+            </tr>
+            <% experiences.forEach(function(e) { %>
+              <tr>
+                <td>
+                  <%= e.kill %>
+                </td>
+             
+              </tr>
+              <% }) %>
+          </table>
+          <% } %>
+
+            <form action="/locations/<%=location._id%>/experiences/new" method="GET">
+              <input type="submit" value="NEW EXPERIENCE">
+            </form>
+
+
+
+
+
+            <%- include('../partials/footer') %>
