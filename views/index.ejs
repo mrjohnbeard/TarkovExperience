@@ -10,7 +10,22 @@
 
   <body>
     <h1>TarkovExperience</h1>
-    <p>Welcome to The Tarkov Experience</p>
+      <p>
+        Welcome to The Tarkov Experience
+      </p>
+
+
+
+
+      <% if (user) { %>
+        <p>
+          Looks like you caved in, thanks for giving your info to the MACHINE. 
+        </p>
+    <% } else { %>
+      <p>
+        You can't really do anything but question existance, unless you sign in. 
+      </p>
+    <% } %>   
   </body>
 
   </html>
