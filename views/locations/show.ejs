@@ -11,14 +11,41 @@
         <% if (experiences.length) { %>
           <table id="experienceBox">
             <tr>
-              <th>Kill</th>
-              
-              <th></th>
+              <th>KM Travel</th>
+              <th>Body Damage</th>
+              <th>Armor Damage</th>
+              <th>Kills</th>
+              <th>Ammo Used</th>
+              <th>Bullets Hit</th>
+              <th>HP Healed</th>
+              <th>Medicine Used</th>
+            
             </tr>
             <% experiences.forEach(function(e) { %>
               <tr>
                 <td>
+                  <%= e.travel %>
+                </td>
+                <td>
+                  <%= e.damageBody %>
+                </td>
+                <td>
+                  <%= e.damageArmor %>
+                </td>
+                <td>
                   <%= e.kill %>
+                </td>
+                <td>
+                  <%= e.ammo %>
+                </td>
+                <td>
+                  <%= e.hitCount %>
+                </td>
+                <td>
+                  <%= e.hpHealed %>
+                </td>
+                <td>
+                  <%= e.hpUsed %>
                 </td>
              
               </tr>
