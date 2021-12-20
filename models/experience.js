@@ -3,31 +3,31 @@ const Schema = mongoose.Schema;
 
 const experienceSchema = new Schema(
     {
-
-        kill:
-        {
-            type: Number,
-            min: 0,
-        },
-
+        
         travel:
         {
             type: Number,
             min: 0,
         },
-
+        
         damageBody:
         {
             type: Number,
             min: 0,
         },
-
+        
         damageArmor:
         {
             type: Number,
             min: 0,
         },
 
+        kill:
+        {
+            type: Number,
+            min: 0,
+        },
+        
         ammo:
         {
             type: Number,
