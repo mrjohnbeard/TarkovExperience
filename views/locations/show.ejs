@@ -40,6 +40,7 @@
               <th>HP Healed</th>
               <th>Medicine Used</th>
             
+            
             </tr>
             <% experiences.forEach(function(e) { %>
               <tr>
@@ -68,13 +69,13 @@
                   <%= e.hpUsed %>
                 </td>
 
-
+                <td>
                 <% if (user && user._id.equals(e.user)) { %>
                   <form action="/experiences/<%= e._id %>?_method=DELETE" method="POST">
                     <button type="submit">X</button>
                   </form>
                 <% } %>
-
+              </td>
 
               </tr>
               <% }); %>

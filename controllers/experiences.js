@@ -22,7 +22,7 @@ function create(req, res) {
 
 function deleteExperience(req, res, next) {
     Location.findOne({ "experiences._id": req.params.id }).then(function (location) {    
-      const experience = location.experience.id(req.params.id);     
+      const experience = location.experiences.id(req.params.id);     
       if (!experience.user.equals(req.user._id)) return res.redirect(`/locations/${location._id}`);      
       experience.remove();     
       location.save()
@@ -31,7 +31,7 @@ function deleteExperience(req, res, next) {
         })
         .catch(function (err) {
           return next(err);
-          res.redirect(`/locations/${location._id}`);
+          // res.redirect(`/locations/${location._id}`);
         });
     });
   }
