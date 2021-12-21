@@ -4,7 +4,7 @@ module.exports = {
     delete: deleteExperience
 };
 
-const Experience = require('./../models/experience');
+const Location = require('./../models/location');
 
 function newExperience(req, res) {
     res.render('experiences/new', {
@@ -14,11 +14,18 @@ function newExperience(req, res) {
 };
 
 function create(req, res) {
-    req.body.location = req.params.id;
-    Experience.create(req.body, function (err) {
-        res.redirect(`/locations/${req.params.id}`);
+  Location.findById(req.params.id, function(err, location) {
+    req.body.user = req.user._id;
+    req.body.userName = req.user.name;
+    req.body.userAvatar = req.user.avatar;
+    location.experiences.push(req.body);
+    location.save(function(err) {
+      if (err) console.log(err);
+      console.log(location);
+      res.redirect(`/locations/${location._id}`);
     });
-};
+  });
+}
 
 function deleteExperience(req, res, next) {
     Location.findOne({ "experiences._id": req.params.id }).then(function (location) {    

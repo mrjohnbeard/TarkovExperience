@@ -1,5 +1,5 @@
 const Location = require("../models/location");
-const Experience = require('../models/experience');
+// const Experience = require('../models/experience');
 
 module.exports = {
     index,
@@ -23,14 +23,11 @@ function index(req, res) {
 
   function show(req, res) {
     Location.findById(req.params.id, function (err, location) {
-      Experience.find({location: location._id}, function(err, experiences) {
         res.render('locations/show', { 
           title: "Location Detail", 
           location,
-          experiences
          });
       });
-    });
   };
   
 

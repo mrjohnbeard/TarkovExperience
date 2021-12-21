@@ -11,7 +11,7 @@ router.get('/locations/:id/experiences/new', experiencesCtrl.new);
 // POST "/locations/:id" - Create Route
 router.post('/locations/:id/experiences', experiencesCtrl.create);
 
-// DELETE "/locations/:id" - Create Route
-router.delete('/locations/:id', experiencesCtrl.delete);
+// DELETE "/locations/:id" - Delete Route
+router.delete('/experiences/:id', experiencesCtrl.delete);
 
 module.exports = router;

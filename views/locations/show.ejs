@@ -28,22 +28,22 @@
 
     <br><br>
 
-        <% if (experiences.length) { %>
+        <% if (location.experiences.length) { %>
           <table id="experienceBox">
-            <tr>
-              <th>KM Travel</th>
-              <th>Body Damage</th>
-              <th>Armor Damage</th>
-              <th>Kills</th>
-              <th>Ammo Used</th>
-              <th>Bullets Hit</th>
-              <th>HP Healed</th>
-              <th>Medicine Used</th>
-            
-            
-            </tr>
-            <% experiences.forEach(function(e) { %>
+            <thead>
               <tr>
+                <th>KM Travel</th>
+                <th>Body Damage</th>
+                <th>Armor Damage</th>
+                <th>Kills</th>
+                <th>Ammo Used</th>
+                <th>Bullets Hit</th>
+                <th>HP Healed</th>
+                <th>Medicine Used</th>           
+              </tr>
+            <% location.experiences.forEach(function(e) { %>
+              <tr>
+                <td class="review-user"><img alt="avatar" src="<%= e.userAvatar %>"><%= e.userName %></td>
                 <td>
                   <%= e.travel %>
                 </td>
@@ -82,11 +82,12 @@
           </table>
           <% } %>
 
+ 
+          <% if (user) { %>
             <form action="/locations/<%=location._id%>/experiences/new" method="GET">
               <input type="submit" value="NEW EXPERIENCE">
             </form>
-
-
+           <% } %>
 
 
 
