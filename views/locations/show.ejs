@@ -67,9 +67,17 @@
                 <td>
                   <%= e.hpUsed %>
                 </td>
-             
+
+
+                <% if (user && user._id.equals(e.user)) { %>
+                  <form action="/experiences/<%= e._id %>?_method=DELETE" method="POST">
+                    <button type="submit">X</button>
+                  </form>
+                <% } %>
+
+
               </tr>
-              <% }) %>
+              <% }); %>
           </table>
           <% } %>
 
