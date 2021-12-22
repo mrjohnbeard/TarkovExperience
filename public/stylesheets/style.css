@@ -8,6 +8,12 @@ a {
 }
 
 
+
+#title {
+  text-align: center;
+}
+
+
 td, th {
   border: 1px solid #999;
   padding: 0.5rem;
@@ -15,4 +21,50 @@ td, th {
 
 #show-page {
 text-align: center;
+
 }
+
+#list td:nth-child(1),
+#list td:nth-child(2), 
+#list td:nth-child(3),
+#list td:nth-child(4) {
+  min-width: 150px;
+  text-align: center;
+}
+
+#list {
+  padding: 30px;
+  font-size: 14px;
+}
+
+#list a {
+  border-radius: 3px;
+  background-color: black;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#list a:hover {
+  background-color: white;
+}
+
+#new-form {
+  padding: 35px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 8rem;
+  margin-left: auto;
+}
+
+.home {
+  text-align: center;
+}
+  

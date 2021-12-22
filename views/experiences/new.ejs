@@ -1,6 +1,8 @@
 <%- include('../partials/header') %>
 
-<form action="/locations/<%= locationNo %>/experiences" method="POST">
+<h1 id="title">TarkovExperience</h1>
+
+<form id="new-form" action="/locations/<%= locationNo %>/experiences" method="POST">
     <label for="travel">KM Traveled:</label>
     <input type="text" name="travel">
     <label for="damageBody">DamageDealtToBody:</label>
@@ -17,7 +19,7 @@
     <input type="text" name="hpHealed">
     <label for="hpUsed">TotalMedicineUsed:</label>
     <input type="text" name="hpUsed">
-    <button type="number" type="submit">Add</button>
+    <input type="submit"></input>
 </form>
 
 <%- include('../partials/footer') %>
