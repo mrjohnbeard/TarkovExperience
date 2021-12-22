@@ -32,6 +32,7 @@
           <table id="experienceBox">
             <thead>
               <tr>
+                <th></th>
                 <th>KM Travel</th>
                 <th>Body Damage</th>
                 <th>Armor Damage</th>
@@ -39,11 +40,14 @@
                 <th>Ammo Used</th>
                 <th>Bullets Hit</th>
                 <th>HP Healed</th>
-                <th>Medicine Used</th>           
+                <th>Medicine Used</th>
+                <th>Delete</th>
+              </thead>           
               </tr>
+              <tbody>
             <% location.experiences.forEach(function(e) { %>
               <tr>
-                <td class="review-user"><img alt="avatar" src="<%= e.userAvatar %>"><%= e.userName %></td>
+                <td class="review-user"><img alt="avatar" src="<%= e.userAvatar %>"></td>
                 <td>
                   <%= e.travel %>
                 </td>
@@ -76,10 +80,10 @@
                   </form>
                 <% } %>
               </td>
-
               </tr>
               <% }); %>
-          </table>
+              </tbody>
+            </table>
           <% } %>
 
  
