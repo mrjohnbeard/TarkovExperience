@@ -27,6 +27,7 @@
     <div>
       <%= location.players %>
     </div>
+    </section>
 
     <br><br>
 
@@ -34,7 +35,7 @@
           <table id="experienceBox">
             <thead>
               <tr>
-                <th></th>
+                <th>Soldier</th>
                 <th>KM Travel</th>
                 <th>Body Damage</th>
                 <th>Armor Damage</th>
@@ -49,7 +50,7 @@
               <tbody>
             <% location.experiences.forEach(function(e) { %>
               <tr>
-                <td class="review-user"><img alt="avatar" src="<%= e.userAvatar %>"></td>
+                <td class="experience-user"><img alt="avatar" src="<%= e.userAvatar %>"></td>
                 <td>
                   <%= e.travel %>
                 </td>
@@ -90,7 +91,7 @@
 
  
           <% if (user) { %>
-            <form action="/locations/<%=location._id%>/experiences/new" method="GET">
+            <form id="newExp" action="/locations/<%=location._id%>/experiences/new" method="GET">
               <input type="submit" value="NEW EXPERIENCE">
             </form>
            <% } %>

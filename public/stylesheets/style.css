@@ -1,12 +1,56 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
+body > nav {
+  grid-area: nav;
+  background-color: #B8C0C2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+}
+
+nav > img {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+body > main {
+  background-color: #E8ECEB;
+}
+
+body > main h1:first-child {
+  margin-bottom: 50px;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav > a:hover:not(.active) {
+  color: white;
+  background-color: #424748;
+}
+
+nav > a.active {
+  color: white;
+  cursor: default;
 }
 
 a {
   color: #00B7FF;
 }
-
 
 
 #title {
@@ -16,13 +60,26 @@ a {
 
 td, th {
   border: 1px solid #999;
-  padding: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
 }
 
-#show-page {
-text-align: center;
 
-}
+
+
+  #show-page {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  #show-page div:nth-child(even) {
+    font-size: 17px;
+  }
+  
 
 #list td:nth-child(1),
 #list td:nth-child(2), 
@@ -35,25 +92,26 @@ text-align: center;
 #list {
   padding: 30px;
   font-size: 14px;
+  justify-content: center;
 }
 
 #list a {
   border-radius: 3px;
-  background-color: black;
   padding: 5px;
   text-decoration: none;
   font-size: 14px;
 }
 
 #list a:hover {
-  background-color: white;
+  background-color: cornflowerblue;
 }
 
 #new-form {
   padding: 35px;
   display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(2, minmax(auto, 22rem));
+  justify-content: center;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, minmax(auto, 10rem));
   font-size: 15px;
   border-radius: 5px;
 }
@@ -68,3 +126,33 @@ text-align: center;
   text-align: center;
 }
   
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+}
+
+.login img {
+  height: 30px;
+}
+
+.experience-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-user img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+#experienceBox {
+  padding: 25px;
+  justify-content: center;
+}
+
+#newExp {
+  justify-self: center;
+}
