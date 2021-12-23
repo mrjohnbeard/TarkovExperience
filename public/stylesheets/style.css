@@ -1,5 +1,5 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
   margin: 0;
   display: grid;
   grid-template-rows: 50px 1fr;
@@ -14,18 +14,15 @@ body > nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px 0 30px;
+  padding: 0 750px 0 750px;
 }
 
 nav > img {
-  width: 34px;
+  width: 25px;
   object-fit: contain;
   margin-right: auto;
 }
 
-body > main {
-  background-color: #E8ECEB;
-}
 
 body > main h1:first-child {
   margin-bottom: 50px;
@@ -35,7 +32,7 @@ nav > a {
   margin: 20px;
   text-decoration: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 nav > a:hover:not(.active) {
@@ -58,6 +55,7 @@ a {
   text-align: center;
   background-color: white;
   opacity: 0.8;
+  font-size: 42px;
 }
 
 
@@ -138,13 +136,25 @@ td, th {
   text-align: center;
   background-color: white;
   opacity: 0.8;
+  font-weight: bold;
 }
+
+#homeTwo {
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  padding-left: 550px;
+  padding-right: 550px;
+  font-weight: bold;
+}
+
+
   
 .login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 34px;
+  height: 15px;
 }
 
 .login img {
