@@ -6,12 +6,19 @@ feel that you no longer want your Raid Stat displayed, you can click on the "X" 
 
 Home - User Logged In
 
+<img src="https://i.imgur.com/0s3qAiP.png" width="475" height="225">
+
 Home - User Logged Out
+
+<img src="https://i.imgur.com/NesA7dM.png" width="475" height="225">
 
 All Locations Page 
 
+<img src="https://i.imgur.com/KHWE8uz.png" width="475" height="225">
+
 Sample Location with Stats 
 
+<img src="https://i.imgur.com/4m0IFVU.png" width="475" height="225">
 
 Services Used: Javascript , HTML, CSS, MongoDB, Mongoose, GoogleOAuth
 
