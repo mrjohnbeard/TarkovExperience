@@ -55,6 +55,8 @@ a {
 
 #title {
   text-align: center;
+  background-color: white;
+  opacity: 0.8;
 }
 
 
@@ -74,6 +76,9 @@ td, th {
     grid-gap: 1rem;
     font-weight: bold;
     font-size: 22px;
+    background-color: white;
+    opacity: 0.8;
+    border: dotted 1px black
   }
 
   #show-page div:nth-child(even) {
@@ -93,11 +98,14 @@ td, th {
   padding: 30px;
   font-size: 14px;
   justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  border: dotted 1px black
 }
 
 #list a {
   border-radius: 3px;
-  padding: 5px;
+  padding: 20px;
   text-decoration: none;
   font-size: 14px;
 }
@@ -114,6 +122,9 @@ td, th {
   grid-template-columns: repeat(2, minmax(auto, 10rem));
   font-size: 15px;
   border-radius: 5px;
+  background-color: white;
+  opacity: 0.8;
+  border: dotted 1px black;
 }
 
 #new-form input[type="submit"] {
@@ -124,6 +135,8 @@ td, th {
 
 .home {
   text-align: center;
+  background-color: white;
+  opacity: 0.8;
 }
   
 .login {
@@ -149,10 +162,19 @@ td, th {
 }
 
 #experienceBox {
-  padding: 25px;
+  padding: 20px;
   justify-content: center;
+  background-color: white;
+  opacity: 0.8;
+  border: dotted 1px black
 }
 
 #newExp {
   justify-self: center;
 }
+
+html {
+  background: url(https://i.imgur.com/pONV6Bk.jpeg) no-repeat center center fixed;
+  background-size: cover;
+}
+
