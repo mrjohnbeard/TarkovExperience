@@ -22,7 +22,7 @@ Sample Location with Stats
 
 Services Used: Javascript , HTML, CSS, MongoDB, Mongoose, GoogleOAuth
 
---link to website here-- 
+https://tarkovexperience.herokuapp.com/
 
 Next Steps: Will be adding a feature that will give the average of the property input (ammo used, bullets hit, etc;). Also interested
 in having users submit image along with the stats. Possibly add a seperate page for all images submitted, either per location, or whole. 
