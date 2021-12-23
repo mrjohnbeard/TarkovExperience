@@ -6,6 +6,8 @@ module.exports = {
     show,
     new: newLocation,
     create,
+    edit: editLocation,
+    editPage,
 };
 
 function index(req, res) {
@@ -49,3 +51,24 @@ function index(req, res) {
       res.redirect('/locations');
     });
   }
+
+  
+function editLocation(req, res) {
+  Location.findOneAndUpdate({_id: req.params.id}, 
+    req.body,
+    {new: true},
+    function(err, location) {
+      if (err || !location) return res.redirect('/locations');
+      res.redirect(`/locations/${location._id}`);
+    });
+    }
+
+    function editPage(req, res) {
+      Location.findById(req.params.id, function (err, location) {
+          res.render('locations/edit', { 
+            title: "Location Detail", 
+            location,
+           });
+        });
+    };
+    

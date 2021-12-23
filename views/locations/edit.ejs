@@ -1,0 +1,11 @@
+<%- include('../partials/header') %>
+
+<h1 id="title">TarkovExperience</h1>
+
+<form action="/locations/<%= location.id %>?_method=PUT" method="POST">
+    <label>Players:</label>
+    <input type="number" name="players" value="<%= location.players %> ">
+    
+</form>
+
+<%- include('../partials/footer') %></br>
