@@ -12,19 +12,27 @@
     <h1 id="title">TarkovExperience</h1>
     <div class="home">  
     <p>
-        Welcome to The Tarkov Experience
+        *--Welcome to The Tarkov Experience--*
       </p>
+      <% if (user) { %>
+        <p>
+          Looks like you caved in, thanks for giving your info to the MACHINE. 
+        </p>
+    <% } else { %>
+      <p>
+        You can't really do anything but question existance, unless you sign in. 
+      </p>
+    <% } %>   
     </div>
 
 <br></br>
-
 <div id="homeTwo">
   <% if (user) { %>  
     <p>
-      Escape from Tarkov is a multiplayer first-person shooter video game in development by Battlestate Games. 
+      Escape from Tarkov is a multiplayer first-person shooter video game in development by Battlestate Games for Windows. 
       The game is set in the fictional Norvinsk region, where a war is taking place between two private military companies 
-      ("USEC" and the "BEAR"). Players join matches called "raids" in which they fight other players 
-      for loot and aim to survive and escape; dying results in the loss of all items the player used and found during that raid with few exceptions.
+      "USEC" and the "BEAR"). Players join matches called "raids" in which they fight other players for loot and aim to 
+      survive and escape; dying results in the loss of all items the player used and found during that raid with few exceptions.
     </p>
 <% } else { %>
   <p>
