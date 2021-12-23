@@ -39,8 +39,9 @@ nav > a {
 }
 
 nav > a:hover:not(.active) {
-  color: white;
-  background-color: #424748;
+  color: red;
+  border: dotted 1px red;
+  
 }
 
 nav > a.active {
@@ -111,7 +112,7 @@ td, th {
 }
 
 #list a:hover {
-  background-color: cornflowerblue;
+  color: red;
 }
 
 #new-form {
@@ -171,6 +172,7 @@ td, th {
 
 #newExp {
   justify-self: center;
+  padding: 10px 0 0 0 ;
 }
 
 html {
@@ -178,3 +180,19 @@ html {
   background-size: cover;
 }
 
+#return {
+  justify-self: center;
+  padding: 0 0 10px 0;
+}
+
+#links {
+  text-align: center;
+  background-color: white;
+  opacity: 0.8;
+  padding: 20px;
+  word-spacing: 150px;
+}
+
+#links a:hover {
+  color: red;
+}
